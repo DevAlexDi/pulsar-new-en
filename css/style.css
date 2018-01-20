@@ -900,7 +900,7 @@
       top: 5px;
       width: 18px;
       height: 12px;
-      background: url(../img/en.png);
+      background: url(../img/ru.png);
       background-size: cover;
       background-repeat: no-repeat; }
     .for-flag .flag-vr:after {
@@ -1095,5 +1095,31 @@
   opacity: 1; }
   .counter-sec .for-hard-bg-2 .wrapp-forcounter[data-anim=true] .one-counter:before {
     opacity: 1; }
+
+.counter-sec .head-counter-sec div h4 {
+  opacity: 0;
+  -webkit-transform: translateX(-50px);
+          transform: translateX(-50px);
+  -webkit-transition: opacity 0.5s linear, -webkit-transform 0.75s cubic-bezier(0.39, 0.575, 0.565, 1);
+  transition: opacity 0.5s linear, -webkit-transform 0.75s cubic-bezier(0.39, 0.575, 0.565, 1);
+  transition: transform 0.75s cubic-bezier(0.39, 0.575, 0.565, 1), opacity 0.5s linear;
+  transition: transform 0.75s cubic-bezier(0.39, 0.575, 0.565, 1), opacity 0.5s linear, -webkit-transform 0.75s cubic-bezier(0.39, 0.575, 0.565, 1); }
+  .counter-sec .head-counter-sec div h4[data-anim=true] {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none; }
+
+.counter-sec .head-counter-sec div p {
+  opacity: 0;
+  -webkit-transform: translateX(50px);
+          transform: translateX(50px);
+  -webkit-transition: opacity 0.5s linear, -webkit-transform 0.75s cubic-bezier(0.39, 0.575, 0.565, 1);
+  transition: opacity 0.5s linear, -webkit-transform 0.75s cubic-bezier(0.39, 0.575, 0.565, 1);
+  transition: transform 0.75s cubic-bezier(0.39, 0.575, 0.565, 1), opacity 0.5s linear;
+  transition: transform 0.75s cubic-bezier(0.39, 0.575, 0.565, 1), opacity 0.5s linear, -webkit-transform 0.75s cubic-bezier(0.39, 0.575, 0.565, 1); }
+  .counter-sec .head-counter-sec div p[data-anim=true] {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none; }
 
 /*# sourceMappingURL=style.css.map */

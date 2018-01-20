@@ -922,7 +922,7 @@
             top: 5px;
             width: 18px;
             height: 12px;
-            background: url(../img/en.png);
+            background: url(../img/ru.png);
             background-size: cover;
             background-repeat: no-repeat;
             
@@ -1111,5 +1111,24 @@
                 opacity: 1;
             }
         }
+    }
+}
+
+.counter-sec .head-counter-sec div h4{
+     opacity: 0;
+    transform: translateX(-50px);
+    transition: transform .75s cubic-bezier(.39, .575, .565, 1), opacity .5s linear;
+    &[data-anim=true] {
+        opacity: 1;
+        transform: none;
+    }
+}
+.counter-sec .head-counter-sec div p{
+    opacity: 0;
+    transform: translateX(50px);
+    transition: transform .75s cubic-bezier(.39, .575, .565, 1), opacity .5s linear;
+    &[data-anim=true] {
+        opacity: 1;
+        transform: none;
     }
 }
